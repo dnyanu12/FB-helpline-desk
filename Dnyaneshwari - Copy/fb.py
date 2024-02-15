@@ -9,8 +9,7 @@ db = client['helpdesk']
 users_collection = db['akash']
 
 # Facebook app credentials
-app_id = '9075392447'
-app_secret = 'aed4Ekia@po'
+app_id ='1460215968173625'
 redirect_uri = 'https://www.facebook.com/profile.php?id=100055813564681&mibextid=ZbWKwL'  # This shohttps://www.facebook.com/profile.php?id=100055813564681&mibextid=ZbWKwLuld be a URL on your domain where Facebook will redirect after authorization
 
 @app.route('/')
@@ -45,7 +44,7 @@ def registration():
 def facebookintegration():
     if request.method == 'GET':
         # Redirect to Facebook login
-        facebook_auth_url = f'https://www.facebook.com/v12.0/dialog/oauth?client_id={9075392447}&redirect_uri={https://www.facebook.com/profile.php?id=100055813564681&mibextid=ZbWKwL}&scope=manage_pages,pages_show_list'
+        facebook_auth_url = f'https://www.facebook.com/v12.0/dialog/oauth?client_id={1460215968173625}&redirect_uri={https://www.facebook.com/profile.php?id=100055813564681&mibextid=ZbWKwL}&scope=manage_pages,pages_show_list'
         return redirect(facebook_auth_url)
     
     elif request.method == 'POST':
