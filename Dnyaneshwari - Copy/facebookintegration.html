@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Helpdesk - Facebook Integration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="facebookintegration">
+        <h2>Facebook Integration</h2>
+        <p>Connect your Facebook Page:</p>
+        <form id="connectForm" onsubmit="connectFacebook(event)">
+            <button type="submit">Connect</button>
+        </form>
+        <p>Delete/Disconnect Page:</p>
+        <form id="disconnectForm" onsubmit="disconnectFacebook(event)">
+            <button type="submit">Disconnect</button>
+        </form>
+    </div>
+
+    <script>
+        function connectFacebook(event) {
+            event.preventDefault()
+            console.log('Connecting Facebook Page...');
+        }
+
+        function disconnectFacebook(event) {
+            event.preventDefault();
+            // Implement Facebook page disconnection logic here
+            console.log('Disconnecting Facebook Page...');
+        }
+    </script>
+</body>
+</html>
